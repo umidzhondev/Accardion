@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #222 !important;
+    font-family: "Ubuntu",sans-serif !important;
+    overflow-x: hidden !important;
+}
+.container{
+    margin-top: 6%;
+}
+i:hover{
+    cursor:pointer;
+}
+.accardion{
+    margin-top: 50px;
+}
+.accardion__container{
+    width: 75%;
+}
+.accardion__header{
+    padding: 40px 80px 40px 50px;
+    box-shadow: 1px 0px 8px 8px rgb(0 0 0 / 10%);
+    border-radius: 133px;
+    cursor:pointer
+}
+.accardion__header-title{
+    margin: 0;
+    padding: 0;
+}
+.accardion__body{
+    padding: 20px 40px;
+    display: none;
+    transition: all .5s ease;
+}
+.accardion__body.visible {
+    display: block;
+}
+.fa-chevron-down{
+    transition: transform .2s ease-in-out
+}
+.fa-chevron-down.rotate-180{
+    transform: rotate(180deg);
+}
+.accardion__body-description{
+    color: #00ff95 !important;
+    font-size: 2.2rem !important;
+}
+.accardion__header.inset{
+    box-shadow: 1px 0px 8px 8px rgb(0 0 0 / 10%) inset;
+}
+@media (max-width: 1281px) {
+    .accardion__header-title{
+        font-size: 2rem !important;
+    }
+    .accardion__body-description{
+        font-size: 2rem !important;
+    }
+}
+@media (max-width: 992px){
+    .accardion__container{
+        width: 80vw !important;
+    }
+}
+@media (max-width: 576px){
+    .accardion__container{
+        width: 95vw !important;
+    }
+    .accardion__header-title{
+        font-size: 1.4rem !important;
+    }
+    .accardion__header{
+        padding: 25px 40px;
+    }
+    .fa-chevron-down{
+        font-size: 24px;
+    }
+    .accardion__body-description{
+        padding: 0 !important;
+        font-size: 1.4rem !important;
+    }
+    .accardion__body{
+        padding: 15px 40px;
+    }
+    .accardion{
+        margin-top: 30px;
+    }
+}
+@media (max-width: 391px){
+    .accardion__header-title{
+        font-size: 1.2rem !important;
+    }
+    .accardion__header{
+        padding: 20px 40px;
+    }
+    .fa-chevron-down{
+        font-size: 18px;
+    }
+    .accardion__body-description{
+        padding: 0 !important;
+    }
+    .accardion__body-description{
+        font-size: 1.2rem !important;
+    }
+}
+@media (max-width: 350px){
+    .accardion__header{
+        padding: 20px 40px;
+    }
+    .accardion__header-title{
+        margin: 0;
+        padding: 0;
+        font-size: 1rem;
+    }
+}
